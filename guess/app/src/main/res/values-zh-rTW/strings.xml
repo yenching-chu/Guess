@@ -9,4 +9,7 @@
     <string name="message">提示訊息</string>
     <string name="title_activity_material">MaterialActivity</string>
     <string name="excellent">超神的! 數字就是</string>
+    <string name="replay_game">重新遊玩</string>
+    <string name="are_you_sure">你確定嗎?</string>
+    <string name="cancel">取消</string>
 </resources>

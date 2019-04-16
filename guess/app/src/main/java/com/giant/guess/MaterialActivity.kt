@@ -19,13 +19,13 @@ class MaterialActivity : AppCompatActivity() {
 
         fab.setOnClickListener { view ->
             AlertDialog.Builder(this)
-                .setTitle("Replay game")
-                .setMessage("Are you sure?")
+                .setTitle(getString(R.string.replay_game))
+                .setMessage(getString(R.string.are_you_sure))
                 .setPositiveButton(getString(R.string.ok)) { _, _ ->
                     secretNumber.reset()
                     ed_number.setText("")
                 }
-                .setNeutralButton("Cancel", null)
+                .setNeutralButton(getString(R.string.cancel), null)
                 .show()
         }
     }

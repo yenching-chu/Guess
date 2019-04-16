@@ -19,14 +19,14 @@ class MainActivity : AppCompatActivity() {
     fun check(view: View) {
         val n = ed_number.text.toString().toInt()
         val diff = secretNumber.validate(n)
-        var message = "Yes, you got it"
+        var message = getString(R.string.yes_you_got_it)
         if (diff > 0) {
-            message = "Smaller"
+            message = getString(R.string.smaller)
         } else if (diff < 0) {
-            message = "Bigger"
+            message = getString(R.string.bigger)
         }
         AlertDialog.Builder(this)
-            .setTitle("Message")
+            .setTitle(getString(R.string.message))
             .setMessage(message)
             .setPositiveButton("OK", null)
             .show()
